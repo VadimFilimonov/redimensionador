@@ -47,10 +47,11 @@ if mode_type == '2':
     if archieve_name == '':
         archieve_name = 'resized_images'
 else:
-    image_name = 'original'
-    image_type = '.jpg'
-    size_file_name = 'sizes.txt'
-    archieve_name = 'resized_images'
+    # настройки по умолчанию
+    image_name = 'original' # название файла изображения
+    image_type = '.jpg' # расширение файла изображения
+    size_file_name = 'sizes.txt' # название файла с размерами
+    archieve_name = 'resized_images' # название архива, куда будут помещаться картинки
 
 # вызываем фукнцию дабы записать значение файла в массив
 array = read_file(open(size_file_name))
